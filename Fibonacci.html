@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Python - NimitDev</title>
+</head>
+
+<body>
+
+
+    <!-- Main content -->
+    <h1>Code:</h1>
+    <pre>
+    def restart_program():
+        terms = int(input("Enter The Terms: "))
+        a, b = 0, 1
+        print(a, end=" ")
+        for i in range(1, terms):
+            print(b, end=" ")
+            a, b = b, a + b
+
+    while True:
+        n = input("Do you want to continue using the program? (Yes/No): ").lower()
+        if n == "yes" or n == "y":
+            restart_program()
+        else:
+            print("Thank you for using the program")
+            break
+    </pre>
+    <b><a href="C:\Users\USER\Desktop\Nimit Coding Workspace\Python\fibonacci_sequence.py" download>Download Fibonacci
+            Python Code</a></b>
+
+
+
+</body>
+
+</html>

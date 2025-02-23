@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfect Number Python - NimitDev</title>
+
+</head>
+
+<body>
+  <!-- Main content -->
+  <h1>Code:</h1>
+  <pre>
+        def restart_program():
+
+            a=int(input("Enter A Number: "))
+            s=0
+            for i in range (1,a//2+1): #Finding factors of "a" from 1 to half of "a" + 1 for faster code
+              if a%i == 0:
+                s = s+i # "s" initially 0 but, for every factor of "a", it gets added to "s" and as "s" value gets over written so for every factor it is getting added with the previous factor value written in "s"
+            if s == a: # Final Checking if the sum of factors is equal to th number itself#
+                 print("Perfect")
+            else: # If not same then it is not perfect
+                 print("Not Perfect")
+             
+        while True: #  Looping the program
+           z=input("Do you want to continue using[Y/N]: ").lower() 
+           if z == "y": #if input "Y" == Yes then program restarts
+             restart_program()
+           elif z == "n": # If no then it stops
+             print("Thank You")
+             break
+           else: # If input wrong then it asks again 
+             print("Invalid Input",sep=">",end="Choose Y or N \n")
+    </pre>
+  <b><a href="C:\Users\USER\Desktop\Nimit Coding Workspace\Python\perfect_number.py" download>Download Perfect Number
+      Python Code</a></b>
+
+
+
+</body>
+
+</html>

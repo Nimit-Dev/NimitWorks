@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Counter Python - NimitDev</title>
+</head>
+
+<body>
+
+    <!-- Main content -->
+    <h1>Code:</h1>
+    <pre>
+        def restart_program():
+  
+        a = input("Enter The Sentence: ").lower()
+        s = 0  
+        for l in a: # l is the variable which stores the value for each vowel in string "a"
+            if l in ["a","e","i","o","u"]: #Checks if l is any of the vowels from a,e,i,o,u in string "a"
+                s += 1 #If vowel is there it adds 1 to value of s which was previously set to 0
+        if s == 0:
+            print("No vowels in the sentence")
+        else:
+            print("Vowels in sentence is/are: ", s)
+     
+        while True:
+     
+            z = input("Do you want to start the program? [Y/N]: ")
+            if z.lower() == "y":
+                print("Starting.....\n 1 \n 2 \n 3")
+                restart_program()
+            elif z.lower() == "n":
+                print("Exiting......")
+                print("Exited.....",sep=("%^--%$"),end="\n Thank you for using this program")
+                exit()
+            else:
+                print("Invalid Input /n Enter Y or N ")
+                continue
+    </pre>
+    <b><a href="C:\Users\USER\Desktop\Nimit Coding Workspace\Python\count_vowels.py" download>Download Vowel Counter
+            Python Code</a></b>
+
+</body>
+
+</html>

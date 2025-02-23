@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Square Python - NimitDev</title>
+</head>
+
+<body>
+
+    <!-- Main content -->
+    <h1>Code:</h1>
+    <pre>
+        def restart_program(): # Function To Restart The Program
+        # Starting The Program
+         import math
+         import os
+         import random
+         a = int(input("Enter A No. To Check Perfect Square Or Not: "))
+         b = math.isqrt(a) # Square Root Of Number But In Integer Form
+         c = (b*b)
+         if c!=a: # So as Integer Form So If Not Perfect Square It Will Not Match
+              print("No")
+         else:
+              print("Yes")
+              # Checking Done For Perfect Square Or Not
+       while True:
+            z=input("Do You Want To Start the Program [Y/N]: ").lower() # Asking For Input And Converting Into Lower For Easy 
+            if z.lower() == "y":
+                  restart_program()
+            elif z not in("y" or "n"): # Checking if the input is not Y or N
+                  print("Choose Y/N ")
+                  continue
+            else:
+                  print("Thank you for using the program") # If Input Not Y But N Closing the Program
+                  restart_program() # Restarting Program
+    </pre>
+    <b><a href="C:\Users\USER\Desktop\Nimit Coding Workspace\Python\Perfect_Square.py" download>Download Perfect Square
+            Python Code</a></b>
+
+
+
+</body>
+
+</html>
